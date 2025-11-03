@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio | TiendaOnlineFerit</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-page">
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+    <div class="container d-flex align-items-center gap-3">
+
+      <!-- Branding / Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <img
+          src="assets/img/icon2.jpg"
+          alt="Logo TiendaOnlineFerit"
+          class="brand-logo rounded-4 border border-1 border-secondary"
+        >
+        <span class="brand-text">TiendaOnlineFerit</span>
+      </a>
+
+      <!-- Boton hamburguesa mobile =====  -->
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Mostrar menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links de navegación -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- === MAIN ================= -->
+<main>
+  <!-- ================= HERO / PORTADA ================= -->
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <!-- Texto principal -->
+        <div class="col-12 col-lg-6">
+          <h1 class="display-5 fw-bold hero-title">
+            Bienvenidos a <span class="brand-accent">TiendaOnlineFerit</span>
+          </h1>
+          <p class="lead hero-subtitle">
+            La mejor calidad para tus mascotas. Productos cómodos, seguros y
+            con envío rápido.
+          </p>
+
+          <!-- Botones de acción -->
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn-main" href="about.html">Sobre Nosotros</a>
+            <a class="btn-outline-main" href="productos.html">Ver Productos</a>
+          </div>
+
+          <!-- Ejemplo expliicito de box model -->
+          <div class="box-example mt-4">
+            <strong>Destacado:</strong> Productos aprobados por veterinarios y dueños exigentes 🐾
+          </div>
+        </div>
+
+        <!-- IMG decorativa / héroe (puede ser una de tus fotos de productos) -->
+        <div class="col-12 col-lg-6 text-center">
+          <img
+            src="assets/img/mascotassi.jpeg"
+            alt="mascotassi"
+            
+          >
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- ================= SECCIoN PRODUCTOS DESTACADOS ================= -->
+  <section class="py-5 productos-destacados">
+    <div class="container">
+
+      <!-- Título de la sección -->
+      <header class="text-center mb-4">
+        <h2 class="section-title fw-bold">Productos Destacados</h2>
+        <p class="section-desc">
+          Lo más elegido esta semana por la comunidad Ferit
+        </p>
+      </header>
+
+      <!-- Grid responsive -->
+      <div class="row g-4">
+        <!-- Card 1 ================= -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="producto-card h-100 d-flex flex-column">
+            <img
+              class="producto-img"
+              src="assets/img/Moisés Prato Beige.webp"
+              alt="Cama tipo moisés beige para gatos"
+            >
+            <div class="p-3 flex-grow-1 d-flex flex-column">
+              <h3 class="producto-nombre h5">
+                Moisés Cama Luna Gris para gatos
+              </h3>
+              <p class="producto-desc flex-grow-1">
+                Tamaño 20 x 50 x 15 cm. Súper acolchada y lavable.
+              </p>
+
+              <a href="about.html" class="btn-main w-100 text-center mt-3">
+                Ver productos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 ================= -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="producto-card h-100 d-flex flex-column">
+            <img
+              class="producto-img"
+              src="assets/img/mochilarosa.png"
+              alt="Mochila transportadora rosa Beepaw"
+            >
+            <div class="p-3 flex-grow-1 d-flex flex-column">
+              <h3 class="producto-nombre h5">
+                Mochila Beepaw Transportadora Rosa
+              </h3>
+              <p class="producto-desc flex-grow-1">
+                44 x 30 x 17 cm. Ideal viajes y vet. Con ventilación frontal.
+              </p>
+
+              <a href="productos.html" class="btn-main w-100 text-center mt-3">
+                Ver productos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 ================= -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="producto-card h-100 d-flex flex-column">
+            <img
+              class="producto-img"
+              src="assets/img/placas.avif"
+              alt="Placa de identificación personalizada en metal floral"
+            >
+            <div class="p-3 flex-grow-1 d-flex flex-column">
+              <h3 class="producto-nombre h5">
+                Placa de identificación Floral
+              </h3>
+              <p class="producto-desc flex-grow-1">
+                Placas grabadas personalizadas en metal. Modelos únicos.
+              </p>
+
+              <a href="about.html" class="btn-main w-100 text-center mt-3">
+                Ver productos
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 4 separada - info de envíos/pagos ================= -->
+      <div class="row g-4 mt-4">
+        <article class="col-12 col-md-8 col-lg-6 mx-auto">
+          <div class="info-card h-100 d-flex flex-column flex-md-row align-items-center gap-3 p-3">
+            <img
+              class="info-img rounded-4"
+              src="assets/img/mascotassi.jpeg"
+              alt="mascotassi"
+            >
+            <div class="flex-grow-1">
+              <h3 class="h5 fw-bold mb-2 text-header">
+                Para consultas llama o envia Whatsapp al:
+              </h3>
+              <p class="mb-3 small">
+                Tel :4455-6677 <br>
+                Whatsapp 15-5555-5555
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer py-4 border-top bg-footer">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
+
+      <div class="text-footer">
+        <strong>TiendaOnlineFerit</strong>
+        <small> © 2025</small>
+      </div>
+
+      <div class="d-flex flex-column text-footer">
+        <div class="d-flex gap-2 flex-wrap">
+          <a class="footer-link" href="https://www.instagram.com/">Instagram</a> · 
+          <a class="footer-link" href="https://www.facebook.com/">Facebook</a> · 
+          <a class="footer-link" href="index.html">Inicio</a>
+        </div>
+        <small>Envíos en zona ✦ Atención personalizada</small>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
