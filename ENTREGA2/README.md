@@ -1,54 +1,59 @@
 # ENTREGA 2 – Desarrollo Web (CoderHouse)
 
-## TiendaOnlineFerit  
-**Entrega N°2 – Desarrollo Web (CoderHouse)**  
-Autor: **Ivanna Arzamendia**
+Este paquete cumple con los requisitos solicitados:
+
+## Estructura
+- **3 HTML mínimos** con **estructura semántica** (`header`, `main`, `section`, `article`, `footer`) y **menú de navegación** en todos.
+  - `index.html`: **100% Bootstrap** (navbar, grid, cards, botones). (**Opción a** del enunciado).
+  - `about.html`: CSS propio + **alert** de Bootstrap (**Opción b**).
+  - `gallery.html`: **CSS Grid + Media Queries** + **badge** de Bootstrap (**Opción b**) con layout mobile/desktop.
+- **Alt completo** en todas las imágenes.
+- **Box Model** demostrados con la clase `.box-example` en cada HTML.
+- **Flex/Grid/Media Queries** usados en `gallery.html` (y flex helpers en `about.html`).
+
+## CSS Avanzado
+- `assets/css/styles.css` con:
+  - Variables de color (misma gama violeta/dark del proyecto 1).
+  - Gradientes, sombras, helpers de layout, utilidades.
+  - `overflow-x` controlado para evitar desbordes.
+  - Media queries para mobile/desktop.
+  - Comentarios en cada sección explicando su propósito.
+
+## Bootstrap
+- Se incluyen los **CDN** de CSS/JS donde corresponde.
+- `index.html` usa **Bootstrap completo** (grids, navbar, cards, botones, responsive).
+- En páginas restantes se integra al menos **1 componente de Bootstrap**.
+
+## Git/GitHub (sugerencia de flujo)
+1. Inicializar repo:
+   ```bash
+   git init
+   git add .
+   git commit -m "Preentrega 2 - Estructura inicial"
+   ```
+2. Crear rama para estilos avanzados:
+   ```bash
+   git checkout -b feature/estilos-avanzados
+   # editar, probar
+   git commit -am "Estilos avanzados y MQ"
+   git checkout main
+   git merge feature/estilos-avanzados
+   ```
+3. Publicar en GitHub:
+   ```bash
+   git branch -M main
+   git remote add origin https://github.com/USUARIO/REPO.git
+   git push -u origin main
+   ```
+4. **GitHub Pages**:
+   - Settings → Pages → Deploy from `main` → root.
+   - URL pública: `https://USUARIO.github.io/REPO/`
+
+## Recomendaciones de performance
+- Optimiza imágenes antes de subirlas.
+- Usa descripciones/meta correctas y títulos únicos.
+- Verifica en navegadores (Chrome/Firefox/Edge).
 
 ---
 
-## 🌐 Enlaces del proyecto
-
-🔗 **Repositorio en GitHub:**  
-[https://github.com/IvannaAr94/ENTREGA2-IvannaArzamendia-CoderH](https://github.com/IvannaAr94/ENTREGA2-IvannaArzamendia-CoderH)
-
-🌍 **Sitio publicado (GitHub Pages):**  
-[https://ivannaar94.github.io/ENTREGA2-IvannaArzamendia-CoderH/](https://ivannaar94.github.io/ENTREGA2-IvannaArzamendia-CoderH/)
-
----
-
-## Descripción del proyecto
-Este proyecto corresponde a la **Entrega N°2 del curso de Desarrollo Web** de CoderHouse.  
-El sitio simula una **tienda online de productos para mascotas**, llamada *TiendaOnlineFerit*.  
-Cuenta con estructura semántica completa y diseño responsivo para desktop y mobile.
-
----
-
-## Estructura del sitio
-El proyecto está dividido en varias secciones:
-
--  Inicio: Página principal con presentación y productos destacados.  
-- Sobre Nosotros: Información de la tienda y su propósito.  
-- Productos: Catalogo de productos con imágenes y descripciones.  
-
----
-
-## Tecnologías utilizadas
-- HTML5: estructura semántica de todas las páginas.  
-- CSS: estilos personalizados, box model, flexbox y media queries.  
-- Bootstrap: componentes y grillas responsivas.  
-- Git / GitHub:  control de versiones y publicación del sitio.  
-
----
-
-## Características técnicas
-✔️ Estructura semántica con `<header>`, `<nav>`, `<main>` y `<footer>`.  
-✔️ Menú de navegación en todas las páginas.  
-✔️ Etiquetas `alt` descriptivas en todas las imágenes.  
-✔️ Uso del modelo de cajas (Box Model) y Flex/Grid.  
-✔️ Un HTML diseñado especialmente para mobile & desktop.  
-✔️ Integración de Bootstrap (menú hamburguesa + grillas).  
-
----
-
-## Estructura del repositorio
-
+**Nota:** Las imágenes incluidas son *placeholders* (violeta). Puedes reemplazarlas manteniendo el mismo nombre o actualizando las rutas.
